@@ -60,7 +60,7 @@
         }
 
         img{
-            image: url(https://github.com/arthur-source/arthur-source.github.io/blob/main/aprender.svg);
+            background-image: url(https://github.com/arthur-source/arthur-source.github.io/blob/main/aprender.svg);
             width: 500px;
             height: 100%;                                 
         }
