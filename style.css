@@ -1,102 +1,113 @@
 
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+        @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
         body{
             font-family: poppins, sans-serif;
             background: rgb(34, 34, 34);
-            color: #fff;           
-            box-sizing: border-box;  
-            overflow: hidden;      
+            color: #fff;
+            box-sizing: border-box;
+            /* overflow: hidden;       */
         }
 
         .principal{
             width: 80%;
             margin: 15px auto;
+            min-height: calc(90vh);
         }
 
         header{
             display: flex;
-            flex-direction: row;
+            align-items: center;
             justify-content: space-between;
-            
+             text-transform: uppercase;
         }
 
-        header h2{
+        /* header h2{
             text-transform: uppercase;
-        }
+        } */
 
         a{
             text-decoration: none;
-            color: #fff;            
+            color: #fff;
         }
 
         a:hover{
             color: #ffcc00;
-            transition: 0.5s;            
+            transition: 0.5s;
         }
 
         li{
             display: inline-block;
             font-size: 18px;
             margin: 15px;
-            text-transform: uppercase;
+
         }
 
-        
+        .bi-list{
+            font-size: 35px;
+            cursor: pointer;
+            display: none;
+        }
 
         form{
-            width: 500px;
-            padding: 15px 0;   
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
             }
 
         form h1{
-            margin: 0;
+
+
+            margin-top: 0;
             color: #ffcc00;
             font-size: 50px;
             line-height: 1;
         }
 
-        form p{
-            margin:15px 0 ;
-        }
 
         img{
-            
             width: 500px;
-            height: 100%;                                 
         }
 
         main{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            
+
         }
 
         fieldset{
-            width: 60%;
-            height: 200px;
-            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            /* flex-grow: 1; */
+            width: 300px;
+            height: 280px;
+             padding: 15px;
             border-radius: 8px;
         }
 
         fieldset input{
-            display: inline-block;
             width:100%;
-            
-            margin-bottom: 10px;           
+
+            margin-bottom: 20px;
             padding: 10px;
             border: none;
             border-radius: 8px;
             outline: none;
             box-sizing: border-box;
+            flex-basis: 40px;
         }
 
         fieldset #btn{
             text-transform:uppercase ;
             color: #fff;
             background: #ffcc00;
+            
         }
-        fieldset #btn:hover{           
+        fieldset #btn:hover{
             color: #ffcc00;
             background: #ccc;
             transition: 0.5s;
@@ -105,4 +116,83 @@
 
         fieldset legend{
             text-align: center;
+            font-size: 35px;
+        }
+
+       
+
+        @media screen and (max-width: 1191px) {
+            img{
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 902px) {
+            li{
+                display: none;
+            }
+
+             .bi-list{
+            font-size: 35px;
+            display: block;
+        }
+
+        }
+
+         @media screen and (max-width: 545px) {
+
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: 0;
+            }
+
+            .principal{
+                margin: auto;
+            }
+main{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+    /* margin-top: 15px; */
+    align-items: center;
+    justify-content: center;   
+}
+
+
+            ul{
+                display: none;
+            }
+
+                  .bi-list{
+            font-size: 35px;
+            display: block;
+        }
+
+            form{
+                /* width: 500px; */
+                 padding: 15px 0; 
+             } 
+form h1{
+            margin-bottom: 15px;
+            color: #ffcc00;
+            font-size: 2.5rem;
+            line-height: 1;
+        }
+
+        img{
+            display: block;
+            width: 300px;
+            margin-top: 50px;
+        }
+
+        header {
+       padding: 10px 0;
+        }
+
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
         }
